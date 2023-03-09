@@ -1,12 +1,28 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[many]{tcolorbox}
+\usepackage{setspace}
+\usepackage{multicol}
 \usepackage{hyperref}
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=cyan,
+    citecolor=cyan
+}
+
+\definecolor{main}{HTML}{5989cf}
+\definecolor{sub}{HTML}{cde4ff}
+
+
+\newtcolorbox{boxH}{
+    colback = sub,
+    colframe = main,
+    boxrule = 0pt,
+    leftrule = 6pt
 }
 
 \urlstyle{same}
@@ -21,29 +37,29 @@
 % add some indents so the title is on the top of the page
 \thispagestyle{empty}
 \vspace{50cm}
+\setlength{\columnsep}{14pt}
 
 
 \section{Introduction}
-The COVID-19 pandemic has affected the world in many ways. \
-The pandemic has caused many deaths and has affected the economy. \
-We can use data to understand the impact of the pandemic on the world. \
-The COVID-19 victims database project is a project that collects and analyzes data related to COVID-19 victims.
+\begin{boxH}
+    This project is still in progress, and the data is only from the United States. (Not including Alaska, Hawaii, and Puerto Rico for visualization purposes.)
+\end{boxH}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\textwidth]{images/USA.png}
-% \caption{COVID-19 victims in the US}
-\end{figure}
+\indent
+
+The COVID-19 pandemic has caused a lot of deaths and has affected many people.\
+The goal of this project is to collect and analyze data related to COVID-19 victims and to gain insights into the survivability of having COVID-19 and contacting it.\
+The project can also help us identify high-risk groups and take measures to protect them.
 
 
 \section{Data Collection}
-The data collection process is automated using Python. \
+\indent
+
+The data collection process is automated using Python.\
 The data is collected from the following sources: \
 \begin{itemize}
-\item \url{https://www.worldometers.info/coronavirus/}
-\item \url{https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html}
-\item \url{https://github.com/joncutrer/geopandas-tutorial/tree/master/data}
-\item \url{https://github.com/nytimes/covid-19-data}
+    \item \cite{cutrer} \url{https://github.com/joncutrer/geopandas-tutorial/tree/master/data} - Map data from Jon Cutrer
+    \item \cite{nytimes} \url{https://github.com/nytimes/covid-19-data} - COVID-19 live data from the New York Times
 \end{itemize}
 
 
@@ -53,19 +69,23 @@ The data is collected from the following sources: \
 
 \section{Visualization}
 
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=1\textwidth]{images/USA.png}
+%     % \caption{COVID-19 victims in the US}
+% \end{figure}
+
 \section{Conclusion}
-The COVID-19 victims database project is an important project that can help us understand the impact of the COVID-19 pandemic on the world.\
+
+\indent
 
 By collecting and analyzing data related to COVID-19 victims, we can gain insights into the survivability of having COVID-19 and contacting it.\
 The project can also help us identify high-risk groups and take measures to protect them.\
 By using Python to automate the data collection and analysis process, we can save time and resources and focus on the analysis and interpretation of the data.
 
 \section{Credit}
-% give thank you to https://github.com/joncutrer/geopandas-tutorial/tree/master/data for the map data
-Thank you to Jon Cutrer for providing the map data. \
-The map data is available at \url{https://github.com/joncutrer/geopandas-tutorial/tree/master/data}.
-\\\\
-Thank you to the New York Times for providing the COVID-19 data. \
-The COVID-19 data is available at \url{https://github.com/nytimes/covid-19-data}.
+
+\bibliographystyle{plain}
+\bibliography{extra/paper}
 
 \end{document}
