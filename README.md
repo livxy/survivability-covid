@@ -5,8 +5,11 @@
 ## Table of Contents
 
 - [About](#about)
-- [Getting Started](#getting_started)
-- [Contributing](../CONTRIBUTING.md)
+- [Getting Started](#getting-started)
+- [Installing](#installing)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 
 ### About <a name = "about"></a>
@@ -34,3 +37,17 @@ pip install -r requirements.txt
 ### Usage <a name = "usage"></a>
 
 **_TO BE ADDED_**
+
+---
+
+### Credits <a name = "credits"></a>
+
+- The New York Times. (2021). Coronavirus (Covid-19) Data in the United States. Retrieved March 9, 2023, from [https://github.com/nytimes/covid-19-data](https://github.com/nytimes/covid-19-data).
+
+- U.S. Department of Homeland Security Infrastructure Foundation-Level Data (HIFLD). (2021). US County Boundaries. Retrieved March 9, 2023, from [https://hifld-geoplatform.opendata.arcgis.com/datasets/us-county-boundaries/explore](https://hifld-geoplatform.opendata.arcgis.com/datasets/us-county-boundaries/explore).
+
+---
+
+### License <a name = "license"></a>
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
