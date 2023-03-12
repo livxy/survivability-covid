@@ -1,2 +1,2 @@
 geopandas==0.12.2
-matplotlib==3.6.0
+matplotlib==3.7.1
